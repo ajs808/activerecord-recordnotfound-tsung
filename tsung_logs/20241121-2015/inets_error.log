@@ -1,0 +1,18 @@
+[21/Nov/2024:20:15:09 -0000] access to /favicon.ico failed for 68.6.73.14, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20241121-2015/favicon.ico: File not found"
+[21/Nov/2024:20:15:09 -0000], Server: tsung_controller, Protocol: HTTP, Transport: TCP, URI: /favicon.ico, Host: 172.31.62.13:8091, Peer: 68.6.73.14:60767, Reason: [{statuscode,404},{description,"Object Not Found"}]
+[21/Nov/2024:20:15:10 -0000] access to /assets/ico/favicon.ico failed for 68.6.73.14, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20241121-2015/assets/ico/favicon.ico: File not found"
+[21/Nov/2024:20:15:10 -0000], Server: tsung_controller, Protocol: HTTP, Transport: TCP, URI: /assets/ico/favicon.ico, Host: 172.31.62.13:8091, Peer: 68.6.73.14:60766, Reason: [{statuscode,404},{description,"Object Not Found"}]
+[21/Nov/2024:20:17:00 -0000] access to /favicon.ico failed for 68.6.73.14, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20241121-2015/favicon.ico: File not found"
+[21/Nov/2024:20:17:00 -0000], Server: tsung_controller, Protocol: HTTP, Transport: TCP, URI: /favicon.ico, Host: 172.31.62.13:8091, Peer: 68.6.73.14:60770, Reason: [{statuscode,404},{description,"Object Not Found"}]
+[21/Nov/2024:20:21:39 -0000] access to /icons/text.gif failed for 68.6.73.14, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20241121-2015/icons/text.gif: File not found"
+[21/Nov/2024:20:21:39 -0000] access to /icons/blank.gif failed for 68.6.73.14, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20241121-2015/icons/blank.gif: File not found"
+[21/Nov/2024:20:21:39 -0000], Server: tsung_controller, Protocol: HTTP, Transport: TCP, URI: /icons/blank.gif, Host: 172.31.62.13:8091, Peer: 68.6.73.14:62577, Reason: [{statuscode,404},{description,"Object Not Found"}]
+[21/Nov/2024:20:21:39 -0000], Server: tsung_controller, Protocol: HTTP, Transport: TCP, URI: /icons/text.gif, Host: 172.31.62.13:8091, Peer: 68.6.73.14:62574, Reason: [{statuscode,404},{description,"Object Not Found"}]
+[21/Nov/2024:20:21:39 -0000] access to /icons/unknown.gif failed for 68.6.73.14, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20241121-2015/icons/unknown.gif: File not found"
+[21/Nov/2024:20:21:39 -0000], Server: tsung_controller, Protocol: HTTP, Transport: TCP, URI: /icons/unknown.gif, Host: 172.31.62.13:8091, Peer: 68.6.73.14:62572, Reason: [{statuscode,404},{description,"Object Not Found"}]

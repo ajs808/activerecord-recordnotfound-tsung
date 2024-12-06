@@ -1,0 +1,8 @@
+time,error_connection_closed,error_send_einval 
+40,1.6,0.5 
+50,0.4,0.1 
+60,0,0.1 
+70,0,0 
+80,0,0.1 
+90,0,0 
+100,0,0 

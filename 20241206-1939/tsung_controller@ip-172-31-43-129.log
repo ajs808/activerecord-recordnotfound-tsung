@@ -1,0 +1,23 @@
+
+=INFO REPORT==== 6-Dec-2024::19:39:05 ===
+    ts_config_server:(5:<0.127.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20241206-1939"
+ 
+=INFO REPORT==== 6-Dec-2024::19:39:05 ===
+              ts_mon:(5:<0.110.0>) starting monitor, global 
+
+=INFO REPORT==== 6-Dec-2024::19:39:05 ===
+           ts_config:(5:<0.127.0>) Reading config file: tsung.xml
+
+=ERROR REPORT==== 6-Dec-2024::19:39:05 ===
+3882- fatal: {invalid_comment,"-- "}
+
+=INFO REPORT==== 6-Dec-2024::19:39:05 ===
+    ts_config_server:(0:<0.127.0>) Error while parsing XML config file: {fatal,
+                                                                         {{invalid_comment,
+                                                                           "-- "},
+                                                                          {file,
+                                                                           "tsung.xml"},
+                                                                          {line,
+                                                                           74},
+                                                                          {col,
+                                                                           13}}}

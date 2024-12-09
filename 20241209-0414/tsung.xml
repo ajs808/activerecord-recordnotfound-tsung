@@ -1,0 +1,34 @@
+<?xml version="1.0"?><tsung loglevel="notice">
+	<clients>
+		<client host="localhost" maxusers="32768" use_controller_vm="true"/>
+	</clients>
+	<servers>
+		<server host="development.eba-jit2pz29.us-west-2.elasticbeanstalk.com" port="80" type="tcp"/>
+	</servers>
+	<load>
+		<arrivalphase phase="1" duration="5" unit="second">
+			<users arrivalrate="1" unit="second"/>
+		</arrivalphase>
+		<arrivalphase phase="2" duration="5" unit="second">
+			<users arrivalrate="2" unit="second"/>
+		</arrivalphase>
+		<arrivalphase phase="3" duration="5" unit="second">
+			<users arrivalrate="4" unit="second"/>
+		</arrivalphase>
+	</load>
+	<options>
+		<option name="global_ack_timeout" value="4000"/>
+	</options>
+    <sessions>
+		<session name="create_user" type="ts_http" weight="1">
+            <setdynvars sourcetype="random_string" length="15">
+                <var name="random_username"/>
+            </setdynvars>
+            <request subst="true">
+                <http method="POST" url="/users" version="1.1" contents="user%5Buser_name%5D=%%_random_username%%&amp;user%5Bpassword%5D=password&amp;user%5Bpassword_confirmation%5D=password" content_type="application/x-www-form-urlencoded">
+                    <http_header name="Accept-Encoding" value="gzip, deflate"/>
+                </http>
+            </request>
+        </session>
+	</sessions>
+</tsung>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?><tsung loglevel="notice">
+	<clients>
+		<client host="localhost" maxusers="32768" use_controller_vm="true"/>
+	</clients>
+	<servers>
+		<server host="development.eba-jit2pz29.us-west-2.elasticbeanstalk.com" port="80" type="tcp"/>
+	</servers>
+	<load>
+		<arrivalphase phase="1" duration="5" unit="second">
+			<users arrivalrate="1" unit="second"/>
+		</arrivalphase>
+		<arrivalphase phase="2" duration="5" unit="second">
+			<users arrivalrate="2" unit="second"/>
+		</arrivalphase>
+		<arrivalphase phase="3" duration="5" unit="second">
+			<users arrivalrate="4" unit="second"/>
+		</arrivalphase>
+	</load>
+	<options>
+		<option name="global_ack_timeout" value="4000"/>
+	</options>
+    <sessions>
+		<session name="example" type="ts_http" weight="1">
+			<request>
+				<http method="GET" url="/login" version="1.1">
+					<http_header name="Accept-Encoding" value="gzip, deflate"/>
+				</http>
+			</request>
+			<transaction name="SIGN_IN">
+				<thinktime value="1" random="false"/>
+				<request subst="true">
+					<http url="/login" method="POST" version="1.1" contents="authenticity_token=%%_encoded_authenticity_token%%&amp;session%5Buser_name%5D=arul&amp;session%5Bpassword%5D=password&amp;commit=Log+In" content_type="application/x-www-form-urlencoded"/>
+				</request>
+			</transaction>
+		</session>
+	</sessions>
+</tsung>

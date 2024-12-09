@@ -1,0 +1,49 @@
+# stats: dump at 1733717329
+stats: users 0 1
+stats: {load,"tsung_controller@ip-172-31-42-10"} 1 0.0 0 0.0 0.0 0 0
+stats: {freemem,"tsung_controller@ip-172-31-42-10"} 1 681.09765625 0 681.09765625 681.09765625 0 0
+stats: {cpu,"tsung_controller@ip-172-31-42-10"} 1 2.739269258750303 0 2.739269258750303 2.739269258750303 0 0
+stats: session 9 7.795 4.095573111435213 18.973 5.417 0 0
+stats: users_count 9 9
+stats: finish_users_count 9 9
+stats: size_rcv 1888 1888
+stats: newphase 1 1
+stats: size_sent 2536 2536
+stats: connected 0 0
+stats: 400 8 8
+stats: request 8 5.3365 2.457865486555356 11.186 3.456 0 0
+stats: connect 8 2.21575 2.0167124082278067 6.75 0.868 0 0
+stats: page 8 5.3365 2.457865486555356 11.186 3.456 0 0
+# stats: dump at 1733717339
+stats: users 0 2
+stats: {load,"tsung_controller@ip-172-31-42-10"} 1 0.0 0.0 0.0 0.0 0.0 1
+stats: {freemem,"tsung_controller@ip-172-31-42-10"} 1 681.56640625 0.0 681.56640625 681.09765625 681.09765625 1
+stats: {cpu,"tsung_controller@ip-172-31-42-10"} 1 1.0 0.0 2.739269258750303 1.0 2.739269258750303 1
+stats: session 24 7.000833333333333 1.4677736163621724 18.973 5.264 7.795 9
+stats: users_count 24 33
+stats: finish_users_count 24 33
+stats: size_rcv 5900 7788
+stats: request 25 4.941320000000001 1.4815015550447461 11.186 3.383 5.3365 8
+stats: newphase 1 2
+stats: size_sent 7925 10461
+stats: connected 0 0
+stats: connect 25 1.2572400000000001 0.7052305881057629 6.75 0.868 2.21575 8
+stats: 400 25 33
+stats: page 25 4.941320000000001 1.4815015550447461 11.186 3.383 5.3365 8
+# stats: dump at 1733717341
+stats: users 0 2
+stats: {load,"tsung_controller@ip-172-31-42-10"} 1 0.0 0.0 0.0 0.0 0.0 2
+stats: {freemem,"tsung_controller@ip-172-31-42-10"} 1 681.87890625 0.0 681.87890625 681.09765625 681.33203125 2
+stats: {cpu,"tsung_controller@ip-172-31-42-10"} 1 0.949050949050949 0.0 2.739269258750303 0.949050949050949 1.8696346293751516 2
+stats: session 0 0 0 18.973 5.264 7.217424242424242 33
+stats: users_count 0 33
+stats: finish_users_count 0 33
+stats: request 0 0 0 11.186 3.383 5.037121212121213 33
+stats: connect 0 0 0 6.75 0.868 1.4896060606060608 33
+stats: page 0 0 0 11.186 3.383 5.037121212121213 33
+stats: size_rcv 0 7788
+stats: newphase 0 2
+stats: size_sent 0 10461
+stats: connected 0 0
+stats: 400 0 33
+EndMonitor:{1733,717341,672659}

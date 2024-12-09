@@ -1,0 +1,83 @@
+
+=INFO REPORT==== 9-Dec-2024::04:51:20 ===
+    ts_config_server:(5:<0.127.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20241209-0451"
+ 
+=INFO REPORT==== 9-Dec-2024::04:51:20 ===
+              ts_mon:(5:<0.110.0>) starting monitor, global 
+
+=INFO REPORT==== 9-Dec-2024::04:51:20 ===
+           ts_config:(5:<0.127.0>) Reading config file: tsung.xml
+
+=ERROR REPORT==== 9-Dec-2024::04:51:20 ===
+595- fatal: {failed_validation,
+                {element,dyn_variable,isnt_comprise_in_the_rule,
+                    {seq,
+                        [{'*',match},
+                         {'*',dyn_variable},
+                         {choice,
+                             [http,jabber,raw,pgsql,ldap,mysql,fs,shell,job,
+                              websocket,amqp,mqtt]}]}}}
+
+=INFO REPORT==== 9-Dec-2024::04:51:20 ===
+    ts_config_server:(0:<0.127.0>) Error while parsing XML config file: {fatal,
+                                                                         {{failed_validation,
+                                                                           {element,
+                                                                            dyn_variable,
+                                                                            isnt_comprise_in_the_rule,
+                                                                            {seq,
+                                                                             [{'*',
+                                                                               match},
+                                                                              {'*',
+                                                                               dyn_variable},
+                                                                              {choice,
+                                                                               [http,
+                                                                                jabber,
+                                                                                raw,
+                                                                                pgsql,
+                                                                                ldap,
+                                                                                mysql,
+                                                                                fs,
+                                                                                shell,
+                                                                                job,
+                                                                                websocket,
+                                                                                amqp,
+                                                                                mqtt]}]}}},
+                                                                          {file,
+                                                                           "tsung.xml"},
+                                                                          {line,
+                                                                           60},
+                                                                          {col,
+                                                                           1}}}
+
+=ERROR REPORT==== 9-Dec-2024::04:51:20 ===
+** Generic server ts_config_server terminating 
+** Last message in was {get_monitor_hosts}
+** When Server state == {state,undefined,
+                               "/home/ec2-user/.tsung/log/20241209-0451",0,0,
+                               0,undefined,1,undefined,'ip-172-31-42-10',0,0,
+                               undefined,undefined}
+** Reason for termination ==
+** {{badrecord,config},
+    [{ts_config_server,handle_call,3,
+                       [{file,"src/tsung_controller/ts_config_server.erl"},
+                        {line,338}]},
+     {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,661}]},
+     {gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,690}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+** Client <0.106.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,167}]},
+    {gen,do_for_proc,2,[{file,"gen.erl"},{line,238}]},
+    {gen_server,call,2,[{file,"gen_server.erl"},{line,211}]},
+    {ts_os_mon,activate,0,
+               [{file,"src/tsung_controller/ts_os_mon.erl"},{line,58}]},
+    {application_starter,run_the_phase,4,
+                         [{file,"application_starter.erl"},{line,99}]},
+    {application_starter,start_apps,3,
+                         [{file,"application_starter.erl"},{line,59}]},
+    {application_starter,start,3,[{file,"application_starter.erl"},{line,45}]},
+    {application_master,start_the_app,5,
+                        [{file,"application_master.erl"},{line,316}]}]
+
+=INFO REPORT==== 9-Dec-2024::04:51:20 ===
+    ts_config_server:(5:<0.147.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20241209-0451"
+ 
